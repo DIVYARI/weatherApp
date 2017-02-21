@@ -9,22 +9,6 @@
 
     this.setState({name:e.target.value});
   },
-  filterDates:function(date)
-  {
-   var a=[];
-   a[0]=date[0].dt_txt.split(" ")[0];
-   var i=0;
-   for(var k in date)
-   {
-     var z=date[k];
-     var y=z.dt_txt.split(" ")[0];
-     if(y!=a[i])
-     {
-       a[++i]=z.dt_txt.split(" ")[0];
-     }
-   }
-   return a;
-  },
 
   saving:function()
   {
@@ -39,7 +23,6 @@
      success: function(data)
      {
        this.setState({weatherObj:data.list});
-        var dates = this.filterDates(data.list);
 
         this.setState({ready:true,datesdata:dates});
 
