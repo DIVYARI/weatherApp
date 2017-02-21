@@ -3,7 +3,7 @@
   var Component=React.createClass({
 
     getInitialState:function() {
-      return({name:"", weatherObj:[],ready:false,datesdata:[]});
+      return({name:"", weatherObj:[],ready:false});
     },
     handleClick:function(e){
 
@@ -22,7 +22,7 @@
      {
        this.setState({weatherObj:data.list});
 
-        this.setState({ready:true,datesdata:dates});
+        this.setState({ready:true});
 
      }.bind(this),
      error: function(xhr, status, err) {
