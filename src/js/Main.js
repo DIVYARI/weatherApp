@@ -33,22 +33,8 @@
     });
 
   },
-  singleTab:function(title){
-  var newData =this.state.weatherObj.map(function(e){
-   if(e.dt_txt.split(" ")[0]===title)
-
-   return e;
-  },this);
-
-  },
-
-
   render:function(){
 
-      var dateparse= this.state.datesdata.map(function(e){
-             return(this.singleTab(e));
-
-         },this);
       var singleReport = function(data){
         return(
           <div className="panel panel-info col-sm-4" key = {data.dt_txt}>
