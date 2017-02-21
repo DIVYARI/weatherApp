@@ -63,7 +63,7 @@
         </nav>
         <div className = 'row'>
         <div className="form-group col-lg-10">
-            <input className="form-control input-lg" placeholder="city name" onChange={this.handleClick} type="text"/>
+            <input className="form-control input-lg" placeholder="enter city name" onChange={this.handleClick} type="text"/>
       </div>
 
       <button className="btn btn-primary btn-lg" onClick={this.saving} style = {{bordeTopWidth: '1px',
