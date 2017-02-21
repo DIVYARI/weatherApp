@@ -16,9 +16,7 @@
    this.setState({ready:false})
     $.ajax({
            url: "http://api.openweathermap.org/data/2.5/forecast?q="+a+",us&mode=json&appid=05ca973f81bfcd400cc54c6398461827",
-
            dataType: 'json',
-
            type: 'GET',
      success: function(data)
      {
